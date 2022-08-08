@@ -1,6 +1,21 @@
 {
   "name": "@vtrbo/utils-docs",
+  "version": "0.0.0",
   "packageManager": "pnpm@7.8.0",
+  "description": "Victor Bo's Vitepress Docs Template.",
+  "author": {
+    "name": "Victor Bo",
+    "email": "hi@vtrbo.cn"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/vtrbo/---name---#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtrbo/---name---.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vtrbo/---name---/issues"
+  },
   "scripts": {
     "dev": "vitepress dev docs --port 5174 --host --open",
     "build": "vitepress build docs",
