@@ -1,10 +1,9 @@
 import { defineConfig } from 'vitepress'
-import sideMethods from './sidebar'
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'Victor Bo Utils',
-  description: 'Collection of common JavaScript or TypeScript utils.',
+  title: '---name---',
+  description: 'Victor Bo\'s ---name--- base on Vitepress.',
 
   base: '/',
   lastUpdated: true,
@@ -26,7 +25,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'twitter', link: 'https://twitter.com/vtrbo88' },
-      { icon: 'github', link: 'https://github.com/vtrbo/utils' },
+      { icon: 'github', link: 'https://github.com/vtrbo/---name---' },
     ],
 
     localeLinks: {
@@ -39,21 +38,9 @@ export default defineConfig({
       copyright: 'Copyright © 2022-present Victor Bo',
     },
 
-    nav: [
-      { text: '指引', link: '/guide/what-is-utils', activeMatch: '/guide/' },
-      { text: '函数', link: sideMethods[0].link || '/method/string', activeMatch: '/method/' },
-    ],
+    nav: getNav(),
 
-    sidebar: {
-      '/guide/': sideGuide(),
-      '/method/': [
-        {
-          text: '函数库',
-          collapsible: false,
-          items: sideMethods,
-        },
-      ],
-    },
+    sidebar: getSidebar(),
   },
 
   markdown: {
@@ -61,13 +48,25 @@ export default defineConfig({
   },
 })
 
-function sideGuide() {
+/**
+ * @description 顶部导航条
+ */
+function getNav() {
+  return [
+    { text: '指引', link: '/guide/what-is-it', activeMatch: '/guide/' },
+  ]
+}
+
+/**
+ * @description 侧边栏
+ */
+function getSidebar() {
   return [
     {
       text: '基础',
       collapsible: false,
       items: [
-        { text: '介绍', link: '/guide/what-is-utils' },
+        { text: '介绍', link: '/guide/what-is-it' },
         { text: '快速上手', link: '/guide/get-started' },
       ],
     },
