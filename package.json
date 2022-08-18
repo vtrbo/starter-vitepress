@@ -1,5 +1,6 @@
 {
   "name": "@vtrbo/utils-docs",
+  "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@7.8.0",
   "description": "Victor Bo's Vitepress Docs Template.",
@@ -24,11 +25,11 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@vtrbo/eslint-config": "^0.0.6",
+    "@vtrbo/eslint-config": "^0.0.7",
     "@vtrbo/ni": "^0.0.3",
-    "@vtrbo/utils": "^0.0.11",
-    "eslint": "^8.21.0",
+    "@vtrbo/utils": "^0.0.15",
+    "eslint": "^8.22.0",
     "typescript": "^4.7.4",
-    "vitepress": "1.0.0-alpha.4"
+    "vitepress": "1.0.0-alpha.8"
   }
 }
