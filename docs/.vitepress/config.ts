@@ -5,7 +5,7 @@ export default defineConfig({
   title: '---name---',
   description: 'Victor Bo\'s ---name--- base on Vitepress.',
 
-  base: '/starter-vitepress/',
+  base: '/',
   lastUpdated: true,
 
   head: [
