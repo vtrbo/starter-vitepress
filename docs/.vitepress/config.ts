@@ -5,7 +5,7 @@ export default defineConfig({
   title: '---name---',
   description: 'Victor Bo\'s ---name--- base on Vitepress.',
 
-  base: '/',
+  base: '/starter-vitepress/',
   lastUpdated: true,
 
   head: [
@@ -17,7 +17,7 @@ export default defineConfig({
 
     editLink: {
       text: '为此页提供修改建议',
-      pattern: 'https://github.com/vtrbo/utils/edit/main/docs/:path',
+      pattern: 'https://github.com/vtrbo/---name---/edit/main/docs/:path',
     },
 
     outlineTitle: '快速定位',
